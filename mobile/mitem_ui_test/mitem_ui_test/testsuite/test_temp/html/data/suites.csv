@@ -1,0 +1,4 @@
+"Status","Name","Duration in ms","Description"
+"passed","testsuite.test_temp.test_badword_detect.TestBadwordDetect#test_delete_detail_page","21341",""
+"passed","testsuite.test_temp.test_badword_detect.TestBadwordDetect#test_start_detect","20662",""
+"passed","testsuite.test_temp.test_badword_detect.TestBadwordDetect#test_choose_onsale_state","14607",""

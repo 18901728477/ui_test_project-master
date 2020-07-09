@@ -1,0 +1,9 @@
+"Status","Name","Duration in ms","Description"
+"passed","mtrade_ui_test.mtrade_ui_test.testsuite.test_temp.test_auto_evaluate.TestAutoEvaluate#test_add_user","6423","
+        1.进入自动评价页面
+        2.点击黑名单管理，进入黑名单页面
+        3.新增一个用户
+        4.调用api，判断是否实际添加成功
+        :param auto_evaluate:
+        :return:
+        "

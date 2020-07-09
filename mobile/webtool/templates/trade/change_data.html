@@ -1,0 +1,17 @@
+{% extends "base.html" %} 
+
+{% block content %}
+    <h1>修改订单数据</h1>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.WAIT_BUYER_PAY_ORDER.label }}<br>
+            {{ form.WAIT_BUYER_PAY_ORDER(size=32) }}
+        </p>
+        <p>
+            {{ form.WAIT_BUYER_PAY_ORDER_CART.label }}<br>
+            {{ form.WAIT_BUYER_PAY_ORDER_CART(size=32) }}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+{% endblock %}

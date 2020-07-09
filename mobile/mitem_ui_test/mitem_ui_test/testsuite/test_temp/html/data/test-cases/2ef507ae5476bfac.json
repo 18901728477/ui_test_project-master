@@ -1,0 +1,121 @@
+{
+  "uid" : "2ef507ae5476bfac",
+  "name" : "test_start_detect",
+  "fullName" : "testsuite.test_temp.test_badword_detect.TestBadwordDetect#test_start_detect",
+  "historyId" : "9264c942a0ab62ebbfe34b5fccee2812",
+  "time" : {
+    "start" : 1589875210993,
+    "stop" : 1589875231655,
+    "duration" : 20662
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "go_badword_detect_page",
+    "time" : {
+      "start" : 1589875200732,
+      "stop" : 1589875210993,
+      "duration" : 10261
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "check_session",
+    "time" : {
+      "start" : 1589875087565,
+      "stop" : 1589875146023,
+      "duration" : 58458
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "init_app",
+    "time" : {
+      "start" : 1589875146023,
+      "stop" : 1589875168978,
+      "duration" : 22955
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "go_badword_detect_page::0",
+    "time" : {
+      "start" : 1589875231655,
+      "stop" : 1589875238502,
+      "duration" : 6847
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "违规词检测"
+  }, {
+    "name" : "story",
+    "value" : "检测结果页面，可以正常全选，一键删除"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testsuite.test_temp"
+  }, {
+    "name" : "suite",
+    "value" : "test_badword_detect"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestBadwordDetect"
+  }, {
+    "name" : "host",
+    "value" : "Ahri-PC"
+  }, {
+    "name" : "thread",
+    "value" : "8556-1_0"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testsuite.test_temp.test_badword_detect"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2ef507ae5476bfac.json",
+  "parameterValues" : [ ]
+}

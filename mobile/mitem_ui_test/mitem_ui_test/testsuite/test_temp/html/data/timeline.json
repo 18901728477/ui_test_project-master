@@ -1,0 +1,49 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "Ahri-PC",
+    "children" : [ {
+      "name" : "8556-1_0",
+      "children" : [ {
+        "name" : "test_delete_detail_page",
+        "uid" : "d40059c8fbe423e6",
+        "parentUid" : "c5213695c19844f51129c2cfe56edd0f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589875248768,
+          "stop" : 1589875270109,
+          "duration" : 21341
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_start_detect",
+        "uid" : "2ef507ae5476bfac",
+        "parentUid" : "c5213695c19844f51129c2cfe56edd0f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589875210993,
+          "stop" : 1589875231655,
+          "duration" : 20662
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_choose_onsale_state",
+        "uid" : "f855576448729746",
+        "parentUid" : "c5213695c19844f51129c2cfe56edd0f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589875179194,
+          "stop" : 1589875193801,
+          "duration" : 14607
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c5213695c19844f51129c2cfe56edd0f"
+    } ],
+    "uid" : "2d7ea7f6c53b307b9d26c21be9fe519a"
+  } ]
+}

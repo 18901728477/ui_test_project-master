@@ -1,0 +1,57 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "违规词检测",
+    "children" : [ {
+      "name" : "状态可以正常切换",
+      "children" : [ {
+        "name" : "test_choose_onsale_state",
+        "uid" : "f855576448729746",
+        "parentUid" : "490bf456d17d5077068dc3cc558c16f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589875179194,
+          "stop" : 1589875193801,
+          "duration" : 14607
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "490bf456d17d5077068dc3cc558c16f7"
+    }, {
+      "name" : "检测结果页面，可以正常全选，一键删除",
+      "children" : [ {
+        "name" : "test_start_detect",
+        "uid" : "2ef507ae5476bfac",
+        "parentUid" : "e608a723008dd355eb61940ff8eca68b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589875210993,
+          "stop" : 1589875231655,
+          "duration" : 20662
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e608a723008dd355eb61940ff8eca68b"
+    }, {
+      "name" : "宝贝信息页面，可以正常全选，删除所有宝贝的违规词",
+      "children" : [ {
+        "name" : "test_delete_detail_page",
+        "uid" : "d40059c8fbe423e6",
+        "parentUid" : "1c3305240c52e81db803d11a4224c7ce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589875248768,
+          "stop" : 1589875270109,
+          "duration" : 21341
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1c3305240c52e81db803d11a4224c7ce"
+    } ],
+    "uid" : "8d359a86745c62a7d7be869c01b04823"
+  } ]
+}

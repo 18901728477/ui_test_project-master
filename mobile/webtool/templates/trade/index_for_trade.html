@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+<!--与模板块名对应-->
+{% block content %}
+    <h1>Hi, 请选择操作类型!</h1>
+    <div>1: <a href="/trade/data">更新订单测试数据</a></div>
+
+    <div>2: <a href="/trade/upload">上传二维码图片->开发版本测试</a></div>
+
+    <div>3: <a href="/trade/run_prd">线上版本回归测试</a></div>
+
+{% endblock %}
+

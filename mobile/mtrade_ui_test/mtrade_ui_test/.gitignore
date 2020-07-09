@@ -1,0 +1,8 @@
+/report*/
+/personal/
+/venv/
+*.jpg
+/test_temp/
+/report_for_jenkins/
+/personal/
+/.idea/

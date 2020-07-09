@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "e9ee4ab2ffad84e85bbb7aaacae320ab",
+    "name" : "mtrade_ui_test.mtrade_ui_test.testsuite.test_temp",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

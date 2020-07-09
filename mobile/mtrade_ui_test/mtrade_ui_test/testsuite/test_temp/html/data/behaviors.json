@@ -1,0 +1,25 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "自动评价",
+    "children" : [ {
+      "name" : "自动评价，黑名单管理页面，可以正常添加用户",
+      "children" : [ {
+        "name" : "test_add_user",
+        "uid" : "8ec0e197c1be2492",
+        "parentUid" : "f39c39d0019a32ff0ad9d3770997ddc1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589875651117,
+          "stop" : 1589875657540,
+          "duration" : 6423
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f39c39d0019a32ff0ad9d3770997ddc1"
+    } ],
+    "uid" : "8f57f2b359b0d8f4bbb3038acc756288"
+  } ]
+}

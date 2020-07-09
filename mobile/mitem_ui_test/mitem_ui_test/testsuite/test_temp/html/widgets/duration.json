@@ -1,0 +1,31 @@
+[ {
+  "uid" : "d40059c8fbe423e6",
+  "name" : "test_delete_detail_page",
+  "time" : {
+    "start" : 1589875248768,
+    "stop" : 1589875270109,
+    "duration" : 21341
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2ef507ae5476bfac",
+  "name" : "test_start_detect",
+  "time" : {
+    "start" : 1589875210993,
+    "stop" : 1589875231655,
+    "duration" : 20662
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f855576448729746",
+  "name" : "test_choose_onsale_state",
+  "time" : {
+    "start" : 1589875179194,
+    "stop" : 1589875193801,
+    "duration" : 14607
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

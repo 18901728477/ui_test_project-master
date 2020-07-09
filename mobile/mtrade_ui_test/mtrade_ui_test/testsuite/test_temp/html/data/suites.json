@@ -1,0 +1,29 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "mtrade_ui_test.mtrade_ui_test.testsuite.test_temp",
+    "children" : [ {
+      "name" : "test_auto_evaluate",
+      "children" : [ {
+        "name" : "TestAutoEvaluate",
+        "children" : [ {
+          "name" : "test_add_user",
+          "uid" : "8ec0e197c1be2492",
+          "parentUid" : "10cbab987fd607b6a3c2b140fb4ce83d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1589875651117,
+            "stop" : 1589875657540,
+            "duration" : 6423
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "10cbab987fd607b6a3c2b140fb4ce83d"
+      } ],
+      "uid" : "3dda9c71e24688abcb4f29ae3c96c12c"
+    } ],
+    "uid" : "e9ee4ab2ffad84e85bbb7aaacae320ab"
+  } ]
+}

@@ -1,0 +1,17 @@
+{"tag": "function", "depth": 1, "time": 1587697401.4060001, "data": {"name": "stop_app", "call_args": {"package": "com.taobao.qianniu"}, "start_time": 1587697401.189, "ret": null, "end_time": 1587697401.4060001}}
+{"tag": "function", "depth": 1, "time": 1587697402.116, "data": {"name": "start_app", "call_args": {"package": "com.taobao.qianniu", "activity": null}, "start_time": 1587697401.4060001, "ret": null, "end_time": 1587697402.116}}
+{"tag": "function", "depth": 1, "time": 1587697420.569, "data": {"name": "sleep", "call_args": {"secs": 3}, "start_time": 1587697417.569, "ret": null, "end_time": 1587697420.569}}
+{"tag": "function", "depth": 1, "time": 1587697445.128, "data": {"name": "sleep", "call_args": {"secs": 2}, "start_time": 1587697443.128, "ret": null, "end_time": 1587697445.128}}
+{"tag": "function", "depth": 1, "time": 1587697451.58, "data": {"name": "sleep", "call_args": {"secs": 3}, "start_time": 1587697448.58, "ret": null, "end_time": 1587697451.58}}
+{"tag": "function", "depth": 1, "time": 1587697456.1139998, "data": {"name": "sleep", "call_args": {"secs": 0.5}, "start_time": 1587697455.614, "ret": null, "end_time": 1587697456.1139998}}
+{"tag": "function", "depth": 1, "time": 1587697474.46, "data": {"name": "sleep", "call_args": {"secs": 2}, "start_time": 1587697472.46, "ret": null, "end_time": 1587697474.46}}
+{"tag": "function", "depth": 1, "time": 1587697480.835, "data": {"name": "sleep", "call_args": {"secs": 3}, "start_time": 1587697477.835, "ret": null, "end_time": 1587697480.835}}
+{"tag": "function", "depth": 1, "time": 1587697486.923, "data": {"name": "sleep", "call_args": {"secs": 0.5}, "start_time": 1587697486.423, "ret": null, "end_time": 1587697486.923}}
+{"tag": "function", "depth": 1, "time": 1587697505.172, "data": {"name": "sleep", "call_args": {"secs": 2}, "start_time": 1587697503.172, "ret": null, "end_time": 1587697505.172}}
+{"tag": "function", "depth": 1, "time": 1587697511.5740001, "data": {"name": "sleep", "call_args": {"secs": 3}, "start_time": 1587697508.5740001, "ret": null, "end_time": 1587697511.5740001}}
+{"tag": "function", "depth": 1, "time": 1587697516.01, "data": {"name": "sleep", "call_args": {"secs": 0.5}, "start_time": 1587697515.5100002, "ret": null, "end_time": 1587697516.01}}
+{"tag": "function", "depth": 1, "time": 1587697523.712, "data": {"name": "sleep", "call_args": {"secs": 3}, "start_time": 1587697520.712, "ret": null, "end_time": 1587697523.712}}
+{"tag": "function", "depth": 1, "time": 1587697547.848, "data": {"name": "sleep", "call_args": {"secs": 3}, "start_time": 1587697544.848, "ret": null, "end_time": 1587697547.848}}
+{"tag": "function", "depth": 1, "time": 1587697552.943, "data": {"name": "sleep", "call_args": {"secs": 0.5}, "start_time": 1587697552.443, "ret": null, "end_time": 1587697552.943}}
+{"tag": "function", "depth": 1, "time": 1587697575.088, "data": {"name": "sleep", "call_args": {"secs": 3}, "start_time": 1587697572.088, "ret": null, "end_time": 1587697575.088}}
+{"tag": "function", "depth": 1, "time": 1587697585.169, "data": {"name": "sleep", "call_args": {"secs": 3}, "start_time": 1587697582.169, "ret": null, "end_time": 1587697585.169}}

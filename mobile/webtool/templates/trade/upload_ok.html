@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传二维码</title>
+</head>
+<body>
+    <h1>二维码上传成功</h1>
+    <form action="" enctype='multipart/form-data' method='POST'>
+        <input type="file" name="file" style="margin-top:20px;"/>
+        <br>
+        <input type="submit" value="上传" class="button-new" style="margin-top:15px;"/>
+        <a href="{{ url_for('run_test_dev_for_trade') }}">执行测试</a>
+    </form>
+    <img src="{{ url_for('static', filename= './trade/test.png',_t=val1) }}" width="400" height="400" alt="你的图片被外星人劫持了～～"/>
+</body>
+</html>

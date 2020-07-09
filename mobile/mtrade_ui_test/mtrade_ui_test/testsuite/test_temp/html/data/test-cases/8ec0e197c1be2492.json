@@ -1,0 +1,108 @@
+{
+  "uid" : "8ec0e197c1be2492",
+  "name" : "test_add_user",
+  "fullName" : "mtrade_ui_test.mtrade_ui_test.testsuite.test_temp.test_auto_evaluate.TestAutoEvaluate#test_add_user",
+  "historyId" : "4fdce522d7bc76393dfe922040bed8c7",
+  "time" : {
+    "start" : 1589875651117,
+    "stop" : 1589875657540,
+    "duration" : 6423
+  },
+  "description" : "\n        1.进入自动评价页面\n        2.点击黑名单管理，进入黑名单页面\n        3.新增一个用户\n        4.调用api，判断是否实际添加成功\n        :param auto_evaluate:\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    1.进入自动评价页面\n    2.点击黑名单管理，进入黑名单页面\n    3.新增一个用户\n    4.调用api，判断是否实际添加成功\n    :param auto_evaluate:\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "init_app_by_scan",
+    "time" : {
+      "start" : 1589875629165,
+      "stop" : 1589875649060,
+      "duration" : 19895
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "auto_evaluate_by_scan",
+    "time" : {
+      "start" : 1589875649060,
+      "stop" : 1589875651117,
+      "duration" : 2057
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "auto_evaluate_by_scan::0",
+    "time" : {
+      "start" : 1589875657541,
+      "stop" : 1589875662946,
+      "duration" : 5405
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "自动评价，黑名单管理页面，可以正常添加用户"
+  }, {
+    "name" : "feature",
+    "value" : "自动评价"
+  }, {
+    "name" : "parentSuite",
+    "value" : "mtrade_ui_test.mtrade_ui_test.testsuite.test_temp"
+  }, {
+    "name" : "suite",
+    "value" : "test_auto_evaluate"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAutoEvaluate"
+  }, {
+    "name" : "host",
+    "value" : "Ahri-PC"
+  }, {
+    "name" : "thread",
+    "value" : "2428-1_0"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "mtrade_ui_test.mtrade_ui_test.testsuite.test_temp.test_auto_evaluate"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8ec0e197c1be2492.json",
+  "parameterValues" : [ ]
+}

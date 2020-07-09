@@ -1,0 +1,21 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "mtrade_ui_test.mtrade_ui_test.testsuite.test_temp.test_auto_evaluate",
+    "children" : [ {
+      "name" : "test_add_user",
+      "uid" : "8ec0e197c1be2492",
+      "parentUid" : "fd4ccbba758599717a6de8396b3ce788",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589875651117,
+        "stop" : 1589875657540,
+        "duration" : 6423
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "mtrade_ui_test.mtrade_ui_test.testsuite.test_temp.test_auto_evaluate"
+  } ]
+}

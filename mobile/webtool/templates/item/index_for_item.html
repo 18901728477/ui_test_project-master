@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+<!--与模板块名对应-->
+{% block content %}
+    <h1>Hi, 请选择操作类型!</h1>
+
+    <div>1: <a href="/item/upload">上传二维码图片->开发版本测试</a></div>
+
+    <div>2: <a href="/item/run_prd">线上版本回归测试</a></div>
+
+    <div>3: <a href="/item/run_prd_p1">线上版本回归测试-p1优先级</a></div>
+
+    <div>4: <a href="/item/run_prd_p2">线上版本回归测试-p2优先级</a></div>
+
+{% endblock %}

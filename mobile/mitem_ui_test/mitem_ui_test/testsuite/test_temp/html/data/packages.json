@@ -1,0 +1,45 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "testsuite.test_temp.test_badword_detect",
+    "children" : [ {
+      "name" : "test_choose_onsale_state",
+      "uid" : "f855576448729746",
+      "parentUid" : "2ec49ded4f21b228f838e660f8b86506",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589875179194,
+        "stop" : 1589875193801,
+        "duration" : 14607
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_start_detect",
+      "uid" : "2ef507ae5476bfac",
+      "parentUid" : "2ec49ded4f21b228f838e660f8b86506",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589875210993,
+        "stop" : 1589875231655,
+        "duration" : 20662
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_delete_detail_page",
+      "uid" : "d40059c8fbe423e6",
+      "parentUid" : "2ec49ded4f21b228f838e660f8b86506",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589875248768,
+        "stop" : 1589875270109,
+        "duration" : 21341
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "testsuite.test_temp.test_badword_detect"
+  } ]
+}

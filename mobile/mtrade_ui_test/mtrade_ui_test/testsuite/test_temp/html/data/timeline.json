@@ -1,0 +1,25 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "Ahri-PC",
+    "children" : [ {
+      "name" : "2428-1_0",
+      "children" : [ {
+        "name" : "test_add_user",
+        "uid" : "8ec0e197c1be2492",
+        "parentUid" : "afe704bb7f023472f7afcb8b55a71710",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589875651117,
+          "stop" : 1589875657540,
+          "duration" : 6423
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "afe704bb7f023472f7afcb8b55a71710"
+    } ],
+    "uid" : "2d7ea7f6c53b307b9d26c21be9fe519a"
+  } ]
+}

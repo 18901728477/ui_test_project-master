@@ -130,7 +130,7 @@ class ReleasePage(BasePage):
     # 极速发布--定时发布宝贝
     def time_release_baby(self):
         # 进入极速发布
-        self.release_common.release_baby_edit(0)
+        self.release_common.release_baby_edit()
         # 添加主图
         self.release_common.add_main_pictures()
         # 定时发布

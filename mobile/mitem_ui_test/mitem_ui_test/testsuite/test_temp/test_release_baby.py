@@ -1,7 +1,5 @@
-import allure
-import pytest
 from mobile.mitem_ui_test.mitem_ui_test.pages.first_page import *
-from mobile.mitem_ui_test.mitem_ui_test.pages.release_baby_page import *
+from mobile.mitem_ui_test.mitem_ui_test.pages.release_baby_page import ReleasePage
 
 
 class TestRelease(BasePage):
@@ -13,14 +11,12 @@ class TestRelease(BasePage):
 
     @allure.feature('发布宝贝')
     @allure.story('普通发布宝贝成功')
-    @pytest.mark.p1
     def test_release_baby_success(self, go_release_page):
         release_successful = ReleasePage().release_baby_success()
         assert release_successful, '普通发布宝贝失败'
 
     @allure.feature('发布宝贝')
     @allure.story('极速发布宝贝成功')
-    @pytest.mark.p2
     def test_fast_release_baby_success(self, go_release_page):
         """
         1.进入极速发布
@@ -30,7 +26,7 @@ class TestRelease(BasePage):
         :return:
         """
         fast_release_successful = ReleasePage().speed_post_success()
-        assert fast_release_successful is True
+        assert fast_release_successful
 
     # @allure.feature('发布宝贝')
     # @allure.story('不添加主图,发布宝贝失败')
@@ -41,7 +37,6 @@ class TestRelease(BasePage):
 
     @allure.feature('发布宝贝')
     @allure.story('不输入价格和库存,发布宝贝失败')
-    @pytest.mark.p3
     def test_not_enter_price_and_quantity(self, go_release_page):
         """
         1.进入普通发布
@@ -55,7 +50,6 @@ class TestRelease(BasePage):
 
     @allure.feature('发布宝贝')
     @allure.story('极速发布,定时发布宝贝成功')
-    @pytest.mark.p4
     def test_time_release_baby(self, go_release_page):
         """
         1.进入极速发布
@@ -66,11 +60,10 @@ class TestRelease(BasePage):
         :return:
         """
         time_release_baby = ReleasePage().time_release_baby()
-        assert time_release_baby is True
+        assert time_release_baby
 
     @allure.feature('发布宝贝')
     @allure.story('极速发布,宝贝放入仓库成功')
-    @pytest.mark.p5
     def test_in_the_warehouse(self, go_release_page):
         """
         1.进入极速发布
@@ -80,4 +73,4 @@ class TestRelease(BasePage):
         :return:
         """
         in_warehouse = ReleasePage().baby_in_warehouse()
-        assert in_warehouse is True
+        assert in_warehouse

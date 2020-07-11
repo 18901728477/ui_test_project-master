@@ -27,9 +27,9 @@ class ReleaseCommonMethods(BasePage):
     search03_input_keyword = ('and', (('attr=', ('text', '请输入标题关键词搜索')),))
 
     # 方法: 进入发布宝贝编辑主页(判断是极速发布还是普通发布)
-    def release_baby_edit(self, button: 0):
+    def release_baby_edit(self, mode='fast'):
         poco(name='发布宝贝').wait_for_appearance(10)
-        if button == 0:
+        if mode == 'fast':
             poco(name='极速发布').click()
             init_element(self.use_baby_as_template).click()
         else:
@@ -120,4 +120,4 @@ class ReleaseCommonMethods(BasePage):
 
 
 if __name__ == '__main__':
-    ReleaseCommonMethods().sold_out(keyword='西遇女鞋', )
+    ReleaseCommonMethods().sold_out(keyword='西遇女鞋', element_for_wait=poco(name='杯子'))

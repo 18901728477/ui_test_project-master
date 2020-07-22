@@ -74,8 +74,8 @@ from airtest.core.cv import Template
 # SERIALNO = 'RKKDU17B29021713'
 
 # SERIALNO = 'XPU4C16B15005800'
-# SERIALNO = 'RKKDU18517006681'
-SERIALNO = '229380bc0304'
+SERIALNO = 'RKKDU18517006681'
+# SERIALNO = '229380bc0304'
 
 # 活动日历名称
 ACTIVITY_NAME = '夏新势力X'
@@ -138,7 +138,3 @@ ITEM_LIST_TITLE = '列表页下架专用宝贝'
 
 # 标题优化专用宝贝
 ITEM_TITLE_IMPROVE = 'http://item.taobao.com/item.htm?id=616629564273'
-ITEM_TITLE_IMPROVE_TITLE = '标题优化专用宝贝'
-
-# 发布宝贝专用图片
-picture = '1594115870715.jpg'

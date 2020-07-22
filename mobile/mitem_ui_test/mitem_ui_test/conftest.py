@@ -89,7 +89,6 @@ def wakeup_item():
     #     return False
 
 
-
 @pytest.fixture(scope='class')  # 所有class，执行之前调用一次
 def init_app_item():
     try:
@@ -489,6 +488,9 @@ def go_release_page(init_app_item):
         print('出现异常')
     yield ReleasePage()
     BasePage().refresh_backhome()
+    # 点击返回,确定
+    poco(name="com.taobao.qianniu:id/qn_widmill_nav_bar_back_btn").click()
+    poco(name='退出').click()
 
 
 # 启动千牛
@@ -579,4 +581,4 @@ def restart_app_by_scan():
 
 
 if __name__ == '__main__':
-    pass
+    go_release_page()

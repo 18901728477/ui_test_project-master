@@ -135,7 +135,7 @@ def super_click(element: UIObjectProxy):
     element.click()
 
 
-class BasePage():
+class BasePage:
 
     # 方法：页面翻滚至底部
     def page_swipe_buttom(self):
@@ -144,7 +144,7 @@ class BasePage():
 
     # 方法：发布宝贝页面翻滚至底部
     def page_swipe_buttom02(self):
-        poco("android.widget.ScrollView").swipe([0, -1])
+        poco("android.widget.RelativeLayout").swipe([0, -1])
         sleep(3)
 
     # 方法：页面翻滚至顶部
@@ -276,8 +276,4 @@ class BasePage():
 
 
 if __name__ == '__main__':
-    def print_demo(parm_demo='xxx'):
-        print(parm_demo)
-
-
-    print_demo(123)
+    BasePage().refresh_backhome()

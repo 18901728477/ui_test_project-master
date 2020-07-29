@@ -1,123 +1,160 @@
-from mobile.mitem_ui_test.mitem_ui_test.item_info import picture
 from mobile.mitem_ui_test.mitem_ui_test.pages.base_page import BasePage, poco, init_element, element_sendtext, sleep, \
-    element_click
+    element_click, locate_by_anchor, does_element_exists
 from mobile.mitem_ui_test.mitem_ui_test.pages.common_list_page import CommonList, UIObjectProxy
-from mobile.mitem_ui_test.mitem_ui_test.pages.element_page import ElementPage
 
 
 class ReleaseCommonMethods(BasePage):
-    general_release = ('and', (('attr=', ('name', '普通发布')),))
-    use_baby_as_template = ('and', (('attr=', ('name', '西遇女鞋2020新款夏季时尚粗花呢一字带搭扣珍珠平底凉鞋...')),))
-    upload_pictures = ('and', (('attr=', ('name', 'android.widget.ImageView')),))
-    image_space = ('and', (('attr=', ('name', '图片空间')),))
-    baby_title = ('and', (('attr=', ('name', '宝贝标题:')),))
-    input = ('and', (('attr=', ('text', '请输入宝贝标题')),))
-    baby_category = ('and', (('attr=', ('name', '宝贝类目:')),))
-    now_release = ('and', (('attr=', ('name', '立即发布')),))
-    time_release = ('and', (('attr=', ('name', '定时发布')),))
-    details_description = ('and', (('attr=', ('name', '详情描述')),))
-    add_text = ('and', (('attr=', ('name', '添加文字')),))
-    input_character = ('and', (('attr=', ('text', '请输入文字')),))
-    in_warehouse_button = ('and', (('attr=', ('name', '放入仓库')),))
-    back_homepage = ('and', (('attr=', ('name', '放入仓库')),))
-    search01_locator = ('and', (('attr=', ('text', '搜索...')),))
+    upload_pictures_locator = ('and', (('attr=', ('text', '上传图片')),))
+    local_album_locator = ('and', (('attr=', ('text', '本地相册')),))
+    baby_title_locator = ('and', (('attr=', ('text', '宝贝标题')),))
+    baby_category_locator = ('and', (('attr=', ('text', '宝贝类目')),))
+    now_release_locator = ('and', (('attr=', ('text', '立即发布')),))
+    time_release_locator = ('and', (('attr=', ('text', '定时发布')),))
+    details_description_locator = ('and', (('attr=', ('text', '详情描述')),))
+    add_text_locator = ('and', (('attr=', ('text', '添加文字')),))
+    input_character_locator = ('and', (('attr=', ('text', '请输入文字')),))
+    in_warehouse_locator = ('and', (('attr=', ('text', '放入仓库')),))
+    search01_locator = ('and', (('attr=', ('text', '请输入搜索关键词')),))
     search02_locator = ('and', (('attr=', ('text', '搜索')),))
-    restore_search_locator = ('and', (('attr=', ('text', '\ue917')),))
-    search_by_keyword_locator = ('and', (('attr=', ('text', '关键词')),))
-    search03_input_keyword = ('and', (('attr=', ('text', '请输入标题关键词搜索')),))
-
-    # 方法: 进入发布宝贝编辑主页(判断是极速发布还是普通发布)
-    def release_baby_edit(self, mode='fast'):
-        poco(name='发布宝贝').wait_for_appearance(10)
-        if mode == 'fast':
-            poco(name='极速发布').click()
-            init_element(self.use_baby_as_template).click()
-        else:
-            init_element(self.general_release).click()
+    picture_locator = ('and', (('attr=', ('name', 'com.taobao.qianniu:id/media_check')),))
+    sure_locator = ('and', (('attr=', ('name', 'com.taobao.qianniu:id/ensure')),))
+    year_season_locator = ('and', (('attr=', ('text', '年份季节')),))
+    baby_attribute_locator = ('and', (('attr=', ('text', '宝贝属性')),))
+    save_locator = ('and', (('attr=', ('text', '保存')),))
+    fixed_price_locator = ('and', (('attr=', ('text', '一口价')),))
+    choose_color_locator = ('and', (('attr=', ('text', '选择颜色')),))
+    sure2_locator = ('and', (('attr=', ('text', '确定')),))
+    article_number_locator = ('and', (('attr=', ('text', '货号')),))
+    choose_size_locator = ('and', (('attr=', ('text', '选择尺码')),))
+    freight_locator = ('and', (('attr=', ('text', '运费模板')),))
+    basic_information_locator = ('and', (('attr=', ('text', '基本信息')),))
+    place_locator = ('and', (('attr=', ('text', '采购地')),))
+    store_category_locator = ('and', (('attr=', ('text', '店铺分类')),))
 
     # 方法: 添加主图
     def add_main_pictures(self):
-        init_element(self.upload_pictures).click()
-        init_element(self.image_space).click()
-        poco(name=picture).click()
-        poco(name='完成').click()
+        # 从本地相册添加5张图片
+        init_element(self.upload_pictures_locator).click()
+        init_element(self.local_album_locator).click()
+        init_element(self.picture_locator)[0].click()
+        init_element(self.picture_locator)[1].click()
+        init_element(self.picture_locator)[2].click()
+        init_element(self.picture_locator)[3].click()
+        init_element(self.picture_locator)[4].click()
+        init_element(self.sure_locator).click()
 
     # 方法: 编辑宝贝标题
     def edit_baby_title(self):
-        # 编辑宝贝标题
-        init_element(self.baby_title).click()
-        element_sendtext(self.input, '杯子')
-        poco(name=' 确定 ').click()
+        locate_by_anchor(init_element(self.baby_title_locator), 2, 'v1v0v0v0v0').set_text('女装,发布宝贝测试用')
 
-    # 方法: 选择宝贝类目
+    # 方法: 选择宝贝类目(存在sku)
     def choose_baby_category(self):
-        init_element(self.baby_category).click()
-        poco(name='家居饰品>>创意饰品>>搞怪杯子').click()
-        poco(name='家居饰品>>创意饰品>>搞怪杯子').wait_for_appearance(5)
+        # 输入关键词搜索,选中女装类目
+        init_element(self.baby_category_locator).click()
+        sleep(5)
+        ReleaseCommonMethods().search_keyword('女装/女士精品>>连衣裙', poco(text="女装/女士精品>>连衣裙"))
+        locate_by_anchor(poco(text="保证金1000/订单险/账期保障"), 1, 'l0').click()
 
-    # 方法: 输入一口价和数量
+    # 添加年份季节(宝贝类目存在必填属性,自定义属性)
+    def add_year_season(self):
+        init_element(self.year_season_locator).wait_for_appearance(8)
+        init_element(self.year_season_locator).click()
+        # 显性等待跳转到宝贝属性页面
+        init_element(self.baby_attribute_locator).wait_for_appearance(8)
+        init_element(self.year_season_locator).click()
+        poco(text="2016年冬季").click()
+        init_element(self.article_number_locator).wait_for_appearance(8)
+        locate_by_anchor(init_element(self.article_number_locator), 2, 'l1l0l0').set_text('00123')
+        init_element(self.save_locator).click()
+
+    # 方法: 输入sku
     def price_and_quantity(self):
-        poco().click([0.1675925925925926, 0.29010416666666666])
-        # 定位有问题...
-        ElementPage().find_price().set_text('9')
-        ElementPage().find_num().set_text('10')
+        poco('android.widget.RelativeLayout').swipe('down')
+        # BasePage().page_swipe_buttom02()
+        init_element(self.fixed_price_locator).click()
+        poco(text='设置规格').wait_for_appearance(8)
+        # 选择尺码
+        init_element(self.choose_size_locator).click()
+        poco(text="145/52A").click()
+        poco(text="155/60A").click()
+        poco(text='确定').click()
+        init_element(self.choose_size_locator).invalidate()
+        # 选择颜色
+        sleep(3)
+        init_element(self.choose_color_locator).click()
+        poco(text="乳白色").click()
+        poco(text="米白色").click()
+        init_element(self.sure2_locator).click()
+        # 批量填充价格和库存
+        poco(text="批量填充").invalidate()
+        poco(text="批量填充").click()
+        locate_by_anchor(poco(text='价格'), 1, 'l1l0l0').set_text('10000000')
+        locate_by_anchor(poco(text='库存'), 1, 'l1l0l0').set_text('999')
+        poco(text="确认").click()
+        poco(text="确定").click()
 
     # 方法: 选择运费和模板
     def choose_freight_template(self):
-        poco(name='运费:').click()
-        poco(name='淘宝二手默认运费模板_上海').click()
+
+        init_element(self.freight_locator).click()
+        poco(text="我的模板1").click()
+        poco(text="确认").click()
 
     # 方法: 添加详情描述
     def add_details_description(self):
-        init_element(self.details_description).click()
-        init_element(self.add_text).click()
-        element_sendtext(self.input_character, '纯手工制作')
-        poco(name=' 确定 ').click()
+        init_element(self.details_description_locator).click()
+        init_element(self.add_text_locator).click()
+        locate_by_anchor(poco(text='取消'), 2, 'v0v0v0v0').set_text('发布宝贝测试,不发货不发货不发货不发货不发货......')
+        poco(text="确定").click()
+
+    # 设置采购地和店铺分类
+    def place_and_store_category(self):
+        # 切换回基本信息
+        init_element(self.basic_information_locator).click()
+        BasePage().page_swipe_buttom()
+        # init_element(self.place_locator).click()
+        init_element(self.store_category_locator).click()
+        locate_by_anchor(poco(text="一级分类00"), 2, 'l0l0').click()
+        poco(text="确定").click()
 
     # 方法: 立即发布
     def immediately_release(self):
-        init_element(self.now_release).click()
+        init_element(self.now_release_locator).click()
 
     # 方法: 放入仓库
     def in_the_warehouse(self):
-        init_element(self.in_warehouse_button).click()
+        init_element(self.in_warehouse_locator).click()
 
     # 方法: 定时发布
     def time_interval(self):
-        init_element(self.time_release).click()
-        # 设置时间
-        poco(name='com.taobao.qianniu:id/wv_hour').swipe('up')
-        poco(text='确认').click()
+        init_element(self.time_release_locator).click()
 
     # 方法: 发布成功断言
     def release_success(self):
-        return poco(name='成功发布到仓库中！').exists()
+        return poco(text='成功发布到出售').exists()
 
     # 方法: 发布放入仓库中断言
     def in_warehouse_success(self):
-        return poco(name='成功发布到仓库中！').exists()
+        return poco(text='成功发布到仓库中').exists()
 
-    # 发布成功后下架
-    def sold_out(self, keyword, element_for_wait: UIObjectProxy):
+    # 下架宝贝
+    # def sold_out(self, keyword, element_for_wait):
+    #     # poco(name='com.taobao.qianniu:id/triver_tab_image').click()
+    #     CommonList().search_by_keyword(keyword, element_for_wait)
+
+    # 关键词搜索(搜索类目)
+    def search_keyword(self, keyword, element):
         does_item_search = True
-        # init_element(self.back_homepage).click()
-        poco(text='商品').click()
-        if init_element(self.search01_locator).exists():
-            init_element(self.search01_locator).click()
-        else:
-            init_element(self.restore_search_locator).click()
-            init_element(self.search01_locator).click()
-        sleep(1)
         # 输入搜索的关键字后，点击搜索
         poco(name='android.widget.EditText').set_text(keyword)
         element_click(self.search02_locator)
         try:
             sleep(3)  # 3秒sleep，搜索完成前，页面上存在的元素使显示等待无实际作用
-            element_for_wait.wait_for_appearance(10)  # 列表搜索，10秒显示等待
+            element.wait_for_appearance(10)  # 列表搜索，10秒显示等待
         except:
             does_item_search = False
         return does_item_search
 
 
 if __name__ == '__main__':
-    ReleaseCommonMethods().sold_out(keyword='西遇女鞋', element_for_wait=poco(name='杯子'))
+    ReleaseCommonMethods().price_and_quantity()

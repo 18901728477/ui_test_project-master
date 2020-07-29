@@ -488,9 +488,21 @@ def go_release_page(init_app_item):
         print('出现异常')
     yield ReleasePage()
     BasePage().refresh_backhome()
-    # 点击返回,确定
-    poco(name="com.taobao.qianniu:id/qn_widmill_nav_bar_back_btn").click()
-    poco(name='退出').click()
+
+
+
+# 进入淘宝拍卖页面
+@pytest.fixture()
+def go_auction_page(init_app_item):
+    try:
+        first_page = init_app_item
+        BasePage().page_swipe_buttom()
+        first_page.go_auction_detect()
+    except Exception:
+        print('出现异常')
+    yield AuctionPage()
+    BasePage().refresh_backhome()
+
 
 
 # 启动千牛

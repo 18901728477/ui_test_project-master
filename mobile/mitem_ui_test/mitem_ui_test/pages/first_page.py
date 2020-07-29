@@ -1,6 +1,7 @@
 # -*- encoding=utf8 -*-
 __author__ = 'xiaoxuan'
 
+from mobile.mitem_ui_test.mitem_ui_test.pages.auction_page import AuctionPage
 from mobile.mitem_ui_test.mitem_ui_test.pages.base_page import *
 from mobile.mitem_ui_test.mitem_ui_test.pages.release_baby_page import ReleasePage
 from mobile.mitem_ui_test.mitem_ui_test.pages.mdetail_page import MdetailPage
@@ -31,6 +32,7 @@ class FirstPage(BasePage):
     first_page_locator = ('and', (('attr=', ('text', '首页')),))
     list_page_locator = ('and', (('attr=', ('text', '商品')),))
     release_btn = ('and', (('attr=', ('text', '发布宝贝')),))
+    auction_button_locator = ('and', (('attr=', ('text', '淘宝拍卖')),))
 
     activity_calendar_anchor = ('and', (('attr=', ('text', ACTIVITY_NAME)),))
 
@@ -141,15 +143,32 @@ class FirstPage(BasePage):
         release_button.click()
 
         try:
-            poco(name='发布宝贝').wait_for_appearance(5)  # 页面跳转，5秒显示等待
-            text_release = poco(name='发布宝贝').exists()
+            poco(text='发布宝贝').wait_for_appearance(5)  # 页面跳转，5秒显示等待
+            text_release = poco(text='发布宝贝').exists()
         except PocoTargetTimeout:
             print('没有进入发布宝贝页面')
             # 刷新页面
             self.refresh_backhome()
             super_click(release_button)
-        poco(name='普通发布').wait_for_appearance(5)
+        poco(text='发布宝贝').wait_for_appearance(5)
         return ReleasePage(), text_release
+
+    # 进入淘宝拍卖页面
+    def go_auction_detect(self):
+        auction_button = init_element(self.auction_button_locator)
+        auction_button.click()
+        try:
+            poco(text='淘宝拍卖').wait_for_appearance(5)  # 页面跳转，5秒显示等待
+            text_auction = poco(text='淘宝拍卖').exists()
+        except PocoTargetTimeout:
+            print('没有进入淘宝拍卖页面')
+            # 刷新页面
+            self.refresh_backhome()
+            super_click(auction_button)
+        poco(text='淘宝拍卖').wait_for_appearance(5)
+        return AuctionPage(), text_auction
+
+
 
 
 # 方法：进入批量修改页面
@@ -261,5 +280,4 @@ def test_activity_calendar_first_page(self):
 
 
 if __name__ == '__main__':
-    x = FirstPage()
-    print(x.test_activity_calendar_first_page())
+    FirstPage().go_release_detect()

@@ -17,7 +17,7 @@ facebook-wda==0.2.1
 hrpc==1.0.8
 idna==2.8
 importlib-metadata==0.23
-Jinja2==2.10.3
+Jinja2==2.11.3
 MarkupSafe==1.1.1
 more-itertools==7.2.0
 mss==4.0.3

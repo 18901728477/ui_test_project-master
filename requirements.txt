@@ -27,7 +27,7 @@ packaging==19.2
 Pillow==6.2.1
 pluggy==0.13.0
 pocoui
-py==1.8.0
+py==1.10.0
 pyparsing==2.4.5
 pypiwin32==223
 pytest==5.3.0
